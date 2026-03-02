@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body {
+    background: aqua;
+    color: #005b77;
+    padding: 20px 15px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #4144ff;
+}
+.subtitle {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-top: 3px;
+}
+.btn-back {
+    margin-top: 12px;
+    background: #6fd6ff;
+    color: #005b77;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    box-shadow: 0 3px 7px rgba(110, 70, 160, 0.25);
+    transition: 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-back:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(110, 70, 160, 0.33);
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.member-list {
+    width: 100%;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 18px;
+    justify-content: center;
+}
+.member-card {
+    background: #ffffffbd;
+    backdrop-filter: blur(5px);
+    padding: 13px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(70, 109, 160, 0.25);
+    transition: 0.25s ease;
+}
+.member-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 16px rgba(70, 109, 160, 0.25);
+}
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #1890ff;
+    margin-bottom: 8px;
+}
+.name {
+    font-weight: 700;
+    font-size: 15px;
+    color: #00115a;
+}
+.desc {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 3px;
+}
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0.7;
+    font-size: 13px;
+}
