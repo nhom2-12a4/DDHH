@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thành viên Tổ 4</title>
+    <link rel="stylesheet" href="to4.css">
+</head>
+<body>
+<header class="header">
+    <h1>Tổ 4 • Lớp 12A4</h1>
+    <p class="subtitle">Danh sách thành viên</p>
+    <a href="../index.html" class="btn-back">
+        ⬅ Quay lại</a>
+</header>
+<main class="container">
+    <div class="member-list">
+        <div class="member-card">
+            <img src="../images/avatar/phphong.jpg" class="avatar">
+            <h3 class="name">Phan Đình Phong</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/girl.jfif" class="avatar">
+            <h3 class="name">Nguyễn Thị Thu Tiền</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/boy.jfif" class="avatar">
+            <h3 class="name">Bùi Trọng Ánh</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/buithu.jpg" class="avatar">
+            <h3 class="name">Bùi Thị Anh Thư</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/kiet.jpg" class="avatar">
+            <h3 class="name">Lương Hoàng Gia Kiệt</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/qnhu.jpg" class="avatar">
+            <h3 class="name">Lương Quỳnh Như</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/quoc.jpg" class="avatar">
+            <h3 class="name">Bùi Ngọc Nhật Quốc</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/ngan.jpg" class="avatar">
+            <h3 class="name">Đỗ Thị Thúy Ngân</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/tuyet.jpg" class="avatar">
+            <h3 class="name">Dương Thị Ngọc Tuyết</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/duycube.jfif" class="avatar">
+            <h3 class="name">Nguyễn Đức Duy</h3>
+            <p class="desc">Thành viên Tổ 4</p>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>© Lớp 12A4 • Tổ 4</p>
+</footer>
+    <!-- LIGHTBOX -->
+<div id="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+<script>
+const avatars = document.querySelectorAll('.avatar');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.getElementById('close');
+
+avatars.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.onclick = () => lightbox.style.display = 'none';
+
+lightbox.onclick = (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.style.display = 'none';
+    }
+};
+</script>
+</body>
+</html>

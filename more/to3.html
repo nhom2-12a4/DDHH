@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thành viên Tổ 3</title>
+    <link rel="stylesheet" href="to3.css">
+</head>
+<body>
+<header class="header">
+    <h1>Tổ 3 • Lớp 12A4</h1>
+    <p class="subtitle">Danh sách thành viên</p>
+    <a href="../index.html" class="btn-back">
+        ⬅ Quay lại</a>
+</header>
+<main class="container">
+    <div class="member-list">
+        <div class="member-card">
+            <img src="../images/avatar/tien.jpg" class="avatar">
+            <h3 class="name">Trần Anh Tiến</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/girl.jfif" class="avatar">
+            <h3 class="name">Ngô Quỳnh Trúc Mây</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/girl.jfif" class="avatar">
+            <h3 class="name">N.Hoàng Anh Thư</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/boy.jfif" class="avatar">
+            <h3 class="name">Hồ Văn Bách</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/hnhi.jpg" class="avatar">
+            <h3 class="name">Nguyễn Thị Hương Nhi</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/boy.jfif" class="avatar">
+            <h3 class="name">Tạ Đình Phong</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/nguyen.jpg" class="avatar">
+            <h3 class="name">Nguyễn Đình Nguyên</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/tai.jpg" class="avatar">
+            <h3 class="name">Trần Thượng Minh Tài</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/phuong.jpg" class="avatar">
+            <h3 class="name">Huỳnh Thị Phương</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/dung.jpg" class="avatar">
+            <h3 class="name">Huỳnh Thị Dung</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/tuyen.jpg" class="avatar">
+            <h3 class="name">Ngô Thị Thanh Tuyền</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+        <div class="member-card">
+            <img src="../images/avatar/vt.jpg" class="avatar">
+            <h3 class="name">Nguyễn Viết Trung</h3>
+            <p class="desc">Thành viên Tổ 3</p>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>© Lớp 12A4 • Tổ 3</p>
+</footer>
+    <!-- LIGHTBOX -->
+<div id="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+<script>
+const avatars = document.querySelectorAll('.avatar');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.getElementById('close');
+
+avatars.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.onclick = () => lightbox.style.display = 'none';
+
+lightbox.onclick = (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.style.display = 'none';
+    }
+};
+</script>
+</body>
+</html>
